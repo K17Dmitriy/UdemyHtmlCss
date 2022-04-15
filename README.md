@@ -1,2 +1,3 @@
 # UdemyHtmlCss
-Educational project
+# **Educational project**
+## My first study project
