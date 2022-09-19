@@ -1,0 +1,85 @@
+.nav {
+	display: flex;
+	width: 100%;
+	background-color: #fff;
+	border-bottom: 2px solid #ccc;
+	box-sizing: 10px 20px;
+	margin-bottom: 40px;
+}
+
+.brand {
+	text-decoration: none;
+	color: #000;
+	font-size: 20px;
+	font-weight: bold;
+	flex-basis: 200px;
+	flex-grow: 1;
+	flex-shrink: 0;
+}
+
+.nav-buttons{
+text-align: right;
+flex-basis: 50%;
+flex-grow: 1;
+flex-shrink: 1;
+}
+
+.nav-buttons a {
+	text-decoration: none;
+	color: #000;
+	font-size: 15px;
+	display: inline-block;
+	padding: 5px;
+	margin: 0 5px;
+}
+
+.body {
+	display: flex;
+	margin-bottom: 40px;
+}
+
+.left-column,
+.center-column,
+.right-column {
+	border: 1px solid red;
+	flex: 1 1 33%;
+	padding: 0 20px;
+}
+
+.center-column {
+	flex-basis: 50%;
+	flex-shrink: 0;
+}
+
+.footer {
+	display: flex;
+	background-color: #111;
+	justify-content: space-around;
+	color: #fff;
+	padding: 50px 0;
+}
+
+.footer div {
+	flex-basis: 20%;
+    border: 1px solid blue;
+}
+
+@media (max-width: 700px) {
+
+    .footer {
+    	flex-wrap: wrap;
+    }  
+
+    .footer div {
+	  flex-basis: 50%;
+	  flex-shrink: 0;
+	  flex-grow: 0;
+      border: 1px solid white;
+      margin-bottom: 10px;
+     }
+
+}
+
+* {
+  box-sizing: border-box;
+}
